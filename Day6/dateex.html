@@ -1,0 +1,13 @@
+<html>
+    <script>
+        function f1()
+        {
+          let d=  document.getElementById("i1").value
+          let mydate = new Date(d)
+          console.log(mydate.getDay())
+        }
+    </script>
+    <body>
+        <input type="date" id="i1" onchange="f1()"/>
+    </body>
+</html>
