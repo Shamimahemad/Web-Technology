@@ -1,0 +1,23 @@
+<html>
+
+<head>
+    <script>
+      function fun()
+      {
+        let v1=new Date(document.getElementById("d1").value)
+         let d=new Date()
+         let diff = d-v1
+         let d2=((((diff/1000)/60)/60)/24)/365
+         document.getElementById("p1").innerHTML=`Age = ${d2} years`
+      }
+    </script>
+
+
+</head>
+
+<body><br><br>
+     select your birth date :<br><br>
+    <input type="date" id="d1" onchange="fun()" />
+      <p id="p1"></p>
+</body>
+</html>

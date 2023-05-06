@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script>
+    function f1() {
+        let a=document.getElementById("i1").value
+        let d = new Date(a) 
+        console.log(typeof(d.getDay()))
+        let day=""
+        switch (d.getDay()) {
+            case 1:
+                day="Monday"
+                break;
+            case 2:
+                day="Tuesday"
+                break;
+            case 3:
+                day="Wednesday"
+                break;
+            case 4:
+                day="Thursday"
+                break;
+            case 5:
+                day="Friday"
+                break;
+            case 6:
+                day="Saturday"
+                break;
+            case 0:
+                day="Sunday"
+                break;
+            default:
+                day="Invalid Input"
+                break;
+        }
+        document.getElementById("p1").innerText=day;
+    }
+    </script>
+</head>
+<body>
+    <input type="date" id="i1" onchange="f1()">
+    <p id="p1"></p>
+
+</body>
+</html>
