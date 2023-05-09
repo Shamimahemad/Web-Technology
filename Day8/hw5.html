@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <script>
+        let arr = []
+        class Product {
+            constructor(proName, proCost) {
+                this.productName = proName
+                this.productCost = proCost
+            }
+        }
+
+        arr.push("brezza", 32323)
+        arr.push("Audi", 784323)
+        arr.push("toyata", 324553)
+        arr.push("creta", 85693232)
+
+        function f1() {
+            let x = document.getElementById("i1").value
+            let y = document.getElementById("i2").value
+
+            arr.push(x, y)
+            document.getElementById("p1").innerHTML = arr
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+    <input type="text" id="i1" placeholder="enter product name">
+    <input type="number" id="i2" placeholder="enter price">
+    <!-- <button onclick="f1()">check</button><br> -->
+    <button onclick="f1()">show data</button>
+    <p id="p1"></p>
+</body>
+
+</html>
